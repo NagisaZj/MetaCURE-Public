@@ -1,6 +1,6 @@
 # MetaCURE: Meta Reinforcement Learning with Empowerment-Driven Exploration
 
-This repository is the official implementation of [MetaCURE: Meta Reinforcement Learning with Empowerment-Driven Exploration]. Please create an issue if you have any problems!
+This repository is the official implementation of [MetaCURE: Meta Reinforcement Learning with Empowerment-Driven Exploration], which has been accepted by ICML 2021. Please create an issue if you have any problems!
 
 
 ## Requirements
