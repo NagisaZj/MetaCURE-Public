@@ -1,0 +1,27 @@
+{
+    "env_name": "walker-rand-params",
+    "n_train_tasks": 40,
+    "n_eval_tasks": 10,
+    "env_params": {
+        "n_tasks": 50
+    }
+    ,
+    "algo_params": {
+        "use_next_obs_in_context": 1,
+        "meta_batch": 10,
+        "num_initial_steps": 512,
+        "num_steps_prior": 512,
+        "num_steps_posterior": 0,
+        "num_extra_rl_steps_posterior": 512,
+        "num_train_steps_per_itr": 2000,
+        "num_evals": 1,
+        "num_steps_per_eval": 256,
+        "num_exp_traj_eval": 0,
+        "embedding_batch_size": 256,
+        "embedding_mini_batch_size": 256,
+        "max_path_length": 64
+    },
+    "util_params": {
+        "base_log_dir":"outputpearl"
+    }
+}

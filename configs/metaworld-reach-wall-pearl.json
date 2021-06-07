@@ -1,0 +1,32 @@
+{
+    "env_name": "metaworld",
+    "n_train_tasks": 50,
+    "n_eval_tasks": 10,
+    "env_params": {
+        "n_tasks": 60,
+        "task_id": 16
+    }
+    ,
+    "algo_params": {
+        "num_initial_steps": 600,
+        "num_steps_prior": 1500,
+        "num_steps_posterior": 1500,
+        "num_extra_rl_steps_posterior": 1500,
+        "num_evals": 1,
+        "num_train_steps_per_itr": 4000,
+        "num_steps_per_eval": 600,
+        "num_exp_traj_eval": 0,
+        "embedding_batch_size": 512,
+        "embedding_mini_batch_size": 512,
+        "last_reward_only": 1,
+        "max_path_length": 150,
+        "dump_eval_paths": 0,
+        "eval_deterministic": 1,
+        "use_next_obs_in_context": 0,
+        "kl_lambda": 1e-1,
+        "metaworld_sparse": 1
+    },
+    "util_params": {
+        "base_log_dir":"outputpearl"
+    }
+}

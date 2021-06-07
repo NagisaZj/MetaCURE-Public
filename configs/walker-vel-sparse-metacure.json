@@ -1,0 +1,43 @@
+{
+    "env_name": "walker-vel-sparse",
+    "n_train_tasks": 40,
+    "n_eval_tasks": 30,
+    "latent_size": 2,
+    "env_params": {
+        "n_tasks": 70
+    }
+    ,
+    "algo_params": {
+        "num_iterations": 5000,
+        "num_initial_steps": 128,
+        "num_steps_prior": 128,
+        "num_steps_posterior": 128,
+        "num_extra_rl_steps_posterior": 128,
+        "num_evals": 1,
+        "num_train_steps_per_itr": 1000,
+        "num_steps_per_eval": 128,
+        "embedding_batch_size": 64,
+        "embedding_mini_batch_size": 64,
+        "batch_size": 64,
+        "max_path_length": 64,
+        "kl_lambda": 1e-1,
+        "dump_eval_paths":0,
+        "meta_episode_len": 1,
+        "num_trajs" : 3,
+        "num_trajs_init": 3,
+        "policy_lr": 3e-4,
+        "qf_lr": 3e-4,
+        "vf_lr": 3e-4,
+        "context_lr": 3e-4,
+        "prediction_reward_scale": 1,
+        "reward_scale": 10,
+        "eval_deterministic": 1,
+        "intrinsic_reward_weight": 0.2,
+        "use_kl_div_intrinsic": 0,
+        "flush": 1000000000
+    },
+    "util_params": {
+        "base_log_dir":"outputmetacure"
+
+    }
+}

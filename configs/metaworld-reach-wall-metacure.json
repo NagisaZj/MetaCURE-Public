@@ -1,0 +1,50 @@
+{
+    "env_name": "metaworld",
+    "n_train_tasks": 50,
+    "n_eval_tasks": 10,
+    "latent_size": 4,
+    "env_params": {
+        "n_tasks": 60,
+        "task_id": 16
+    }
+    ,
+    "algo_params": {
+        "num_iterations": 5000,
+        "num_initial_steps": 0,
+        "num_tasks_sample": 5,
+        "num_steps_prior": 300,
+        "num_evals": 1,
+        "num_steps_posterior": 300,
+        "num_extra_rl_steps_posterior": 300,
+        "num_train_steps_per_itr": 1500,
+        "num_steps_per_eval": 600,
+        "embedding_batch_size": 64,
+        "embedding_mini_batch_size": 64,
+        "batch_size": 64,
+        "max_path_length": 150,
+        "kl_lambda": 1e-1,
+        "dump_eval_paths":0,
+        "meta_episode_len": 3,
+        "num_trajs" : 2,
+        "num_trajs_init": 2,
+        "policy_lr":3e-4,
+        "qf_lr": 3e-4,
+        "vf_lr": 3e-4,
+        "context_lr": 3e-4,
+        "prediction_reward_scale": 1,
+        "reward_scale": 1e-0,
+        "eval_deterministic": 1,
+
+        "intrinsic_reward_weight": 0.2,
+
+        "use_kl_div_intrinsic": 0,
+        "rsample_rate": 15,
+        "rsample_rate_eval": 15,
+        "consider_dynamics": 1,
+        "metaworld_sparse": 1
+    },
+    "util_params": {
+        "base_log_dir":"outputmetacure"
+
+    }
+}

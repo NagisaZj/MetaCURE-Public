@@ -1,0 +1,30 @@
+{
+    "env_name": "reacher-goal-sparse",
+    "n_train_tasks": 80,
+    "n_eval_tasks": 20,
+    "env_params": {
+        "n_tasks": 100
+    }
+    ,
+    "algo_params": {
+        "num_initial_steps": 256,
+        "num_tasks_sample": 10,
+        "num_steps_prior": 256,
+        "num_steps_posterior": 256,
+        "num_extra_rl_steps_posterior": 0,
+        "num_train_steps_per_itr": 1000,
+        "num_steps_per_eval": 128,
+        "embedding_batch_size": 1024,
+        "embedding_mini_batch_size": 1024,
+        "max_path_length": 64,
+        "discount": 0.90,
+        "reward_scale": 100.0,
+        "kl_lambda": 1.0,
+        "num_exp_traj_eval": 0,
+        "dump_eval_paths": 1,
+        "eval_deterministic":1
+    },
+    "util_params": {
+        "base_log_dir":"outputpearl"
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "env_name": "cheetah-vel-sparse",
+    "n_train_tasks": 100,
+    "n_eval_tasks": 30,
+    "env_params": {
+        "n_tasks": 130
+    }
+    ,
+    "algo_params": {
+        "num_initial_steps": 384,
+        "num_steps_prior": 256,
+        "num_steps_posterior": 0,
+        "num_extra_rl_steps_posterior": 256,
+        "num_evals": 1,
+        "num_steps_per_eval": 128,
+        "num_exp_traj_eval": 0,
+        "embedding_batch_size": 128,
+        "embedding_mini_batch_size": 128,
+        "last_reward_only": 1,
+        "max_path_length": 64,
+        "dump_eval_paths": 1,
+        "eval_deterministic": 1
+    },
+    "util_params": {
+        "base_log_dir":"outputpearl"
+    }
+}
