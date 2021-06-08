@@ -34,7 +34,7 @@
         "prediction_transition_scale": 1,
         "reward_scale": 10,
         "eval_deterministic": 1,
-        "intrinsic_reward_weight": 0.1,
+        "intrinsic_reward_weight": 0.2,
         "use_kl_div_intrinsic": 0,
         "rsample_rate": 4,
         "consider_dynamics": 1
