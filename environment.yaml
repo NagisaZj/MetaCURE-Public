@@ -1,4 +1,4 @@
-name: metacure2
+name: metacure
 channels:
   - pytorch
   - defaults
