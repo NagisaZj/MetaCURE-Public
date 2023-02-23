@@ -98,7 +98,7 @@ class PEARLAgent(nn.Module):
         o, a, r, no, d, info = inputs
         if self.sparse_rewards:
             r = info['sparse_reward']
-        r = r *10
+        # r = r *10
         o = ptu.from_numpy(o[None, None, ...])
         a = ptu.from_numpy(a[None, None, ...])
         r = ptu.from_numpy(np.array([r])[None, None, ...])
