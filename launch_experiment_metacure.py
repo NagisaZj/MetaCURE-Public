@@ -235,6 +235,8 @@ def main(config, gpu, docker, debug):
             exp_params = json.load(f)
         variant = deep_update_dict(exp_params, variant)
     variant['util_params']['gpu_id'] = gpu
+    if gpu < 0:
+        variant['util_params']['use_gpu'] = False
 
     experiment(variant)
 
