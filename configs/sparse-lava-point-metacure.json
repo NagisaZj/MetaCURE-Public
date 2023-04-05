@@ -1,0 +1,41 @@
+{
+    "env_name": "sparse-lava-point",
+    "n_train_tasks": 40,
+    "n_eval_tasks": 20,
+    "env_params": {
+        "n_tasks": 60,
+        "goal_radius": 0.2,
+        "lava_cost": 5.0
+    }
+    ,
+    "algo_params": {
+        "num_iterations": 3000,
+        "num_initial_steps": 0,
+        "num_tasks_sample": 10,
+        "num_steps_prior": 128,
+        "num_steps_posterior": 128,
+        "num_extra_rl_steps_posterior": 128,
+        "num_train_steps_per_itr": 1000,
+        "num_steps_per_eval": 128,
+        "embedding_batch_size": 64,
+        "embedding_mini_batch_size": 64,
+        "batch_size": 64,
+        "max_path_length": 100,
+        "discount": 0.90,
+        "reward_scale": 100.0,
+        "kl_lambda": 1e-3,
+        "dump_eval_paths":1,
+        "meta_episode_len": 3,
+        "num_trajs" : 2,
+        "num_trajs_init": 2,
+        "use_all_trajs": 1,
+        "intrinsic_reward_weight": 0.2,
+        "use_kl_div_intrinsic": 0,
+        "eval_deterministic":1,
+        "prediction_reward_scale": 10
+    },
+    "util_params": {
+        "base_log_dir":"outputmetacure"
+
+    }
+}

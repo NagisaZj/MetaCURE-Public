@@ -156,6 +156,7 @@ def experiment(variant):
                             action_dim,
                             **variant['algo_params'])
     if 'vel' in variant['env_name'] or 'point' in variant['env_name']:
+
     #if 'point' in variant['env_name']:
         print('36!')
         algorithm = ExpSACFinSubtract3(
